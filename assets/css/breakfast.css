@@ -1,0 +1,86 @@
+img {
+  width: 100%;
+  height: auto;
+}
+
+.break_over {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.break_over_billede {
+  position: relative;
+  display: inline-block;
+}
+
+.break_overskrift {
+  position: absolute;
+
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 3rem;
+}
+
+.break_skema {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  justify-items: center;
+  margin-top: 3rem;
+}
+
+.kategori {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.kategori_billede {
+  display: block;
+  max-width: 200px;
+  /* kan fjernes med andet billede  */
+  width: 200px;
+  height: 200px;
+
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.kategori_tekst {
+  position: absolute;
+  font-weight: 700;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.kategori:hover {
+  transform: scale(1.1);
+  filter: grayscale(100%);
+}
+
+@media (min-width: 1000px) {
+  .break_skema {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3rem;
+    justify-items: center;
+  }
+
+  .break_overskrift {
+    position: absolute;
+
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 6rem;
+  }
+}
