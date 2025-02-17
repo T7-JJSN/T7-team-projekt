@@ -6,14 +6,14 @@ header {
   padding: 10px;
   background-color: #f2ebe3;
   z-index: 100;
-  font-family: "Alegreya", serif;
+  font-family: "ivypresto-display", serif;
   font-style: normal;
   text-align: center;
 }
 
 @media (min-width: 800px) {
   .logo img {
-    width: 100px;
+    width: 125px;
     height: 90px;
   }
   .logo2 {
@@ -29,7 +29,7 @@ nav {
 a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.8);
-  margin: 0 40px;
+  margin: 0 35px;
 }
 
 .menu {
@@ -51,7 +51,8 @@ a {
 }
 
 .menu a:hover {
-  color: #bd8b68;
+  color: #0c4140;
+  text-decoration: underline;
 }
 
 .burger {
