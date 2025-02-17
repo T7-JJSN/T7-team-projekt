@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+/********** produktliste *********/
+.opskrift_liste_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
+  gap: 25px;
+  padding-inline: 7rem;
+  padding-top: 5rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p_tekst1 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-top: 1rem;
+}
+
+.opskrift {
+  gap: 5px;
+  display: grid;
+  grid-template-rows: subgrid;
+  position: relative;
+  grid-row: span 4;
+  background-color: #f2ebe3;
+}
+.opskrift:hover {
+  transform: scale(1.05);
+}
+
+.opskrift_billede {
+  padding-inline: 1rem;
+  padding-top: 1rem;
+}
+
+.container_boks_hero {
+  position: relative;
+  display: inline-block;
+}
+
+.container_boks_hero img {
+  width: 100%;
+  display: block;
+}
+
+.h1_opskriftside {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8rem;
+  color: white;
+}
+
+.centeret_opskrift {
+  display: flex;
+  justify-content: center; /* Centrerer horisontalt */
+  align-items: center; /* Centrerer vertikalt */
+  width: 100%; /* Sørger for responsivt billede */
+  max-width: 400px; /* Juster efter behov */
+}
+
+.time_boks {
+  display: inline-block;
+  position: absolute;
+  background: #d9d9d9;
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px 15px;
+}
+
+@media screen and (max-width: 968px) {
+  .opskrift_liste_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    padding-inline: 3rem;
+  }
+  .h1_opskriftside {
+    font-size: 7rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .opskrift_liste_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 45px;
+    padding-inline: 2rem;
+  }
+  .h1_opskriftside {
+    font-size: 5rem;
+  }
+}
