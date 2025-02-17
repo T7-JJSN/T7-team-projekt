@@ -34,7 +34,7 @@ fetch(`https://dummyjson.com/recipes/${identity}`)
         // Populate the container with the dynamically generated recipe details
         produktgrid.innerHTML = `
           <h1>${product.name}</h1> <!-- Recipe title -->
-          <img src="https://cdn.dummyjson.com/recipe-images/${product.id}.webp" alt=""> <!-- Recipe image -->
+          <img class="recipe-img" src="https://cdn.dummyjson.com/recipe-images/${product.id}.webp" alt="Recipe Image"> <!-- Recipe image -->
           <div class="grid_2-1">
               <p><b>Servings:</b> ${product.servings}</p> <!-- Display number of servings -->
               <p><b>Difficulty:</b> ${product.difficulty}</p> <!-- Display difficulty level -->
