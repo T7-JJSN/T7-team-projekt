@@ -49,17 +49,26 @@ h1 {
     border-radius: 10px;
     align-content: center;
     color: #0C4140;
+    font-size: 2vw;
 }
 
 .grid_3-1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
     grid-template-rows: 1fr;
     gap: 1rem;
     padding-inline: 15vw;
     padding-bottom: 1rem;
     margin-inline: auto;
     background-color: #0C4140;
+}
+
+h3 {
+    color: #E2ECDD;
+    font-weight: bold;
+    align-self: center;
+    font-family: sans-serif;
+    font-size: 3vw;
 }
 
 .grid_2-2 {
@@ -158,10 +167,17 @@ input[type="checkbox"] {
         padding-inline: 10vw;
     }
 
+
+
     .grid_2-2 {
         grid-template-columns: 1fr;
         max-width: 90vw;
         margin-top: 1rem;
         gap: 1rem;
+    }
+
+    .grid_2-1 p,
+    .grid_3-1 p {
+        font-size: 1rem;
     }
 }

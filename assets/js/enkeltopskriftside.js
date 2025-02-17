@@ -41,7 +41,9 @@ fetch(`https://dummyjson.com/recipes/4`)
           </div>
           <div class="grid_3-1">
               <p><b>Prep time:</b> ${product.prepTimeMinutes} min</p> <!-- Preparation time -->
+              <h3>+</h3>
               <p><b>Cook time:</b> ${product.cookTimeMinutes} min</p> <!-- Cooking time -->
+              <h3>=</h3>
               <p><b>Total time:</b> ${product.prepTimeMinutes + product.cookTimeMinutes} min</p> <!-- Total time -->
           </div>
           <div class="grid_2-2">
