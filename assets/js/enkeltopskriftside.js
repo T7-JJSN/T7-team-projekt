@@ -2,14 +2,14 @@
 // This allows us to get specific details from the URL, such as an ID
 const queryString = document.location.search; // Get the full query string from the URL
 const URLparams = new URLSearchParams(queryString); // Parse the query string
-const identity = URLparams.get('id'); // Extract the value associated with 'id'
+const identity = URLparams.get('id'); // Extract the value associated with 'id'½
 console.log(identity); // Log the ID to the console for debugging purposes
 
 // Select the container where the recipe data will be displayed in the HTML
 const produktgrid = document.querySelector(".produktgrid");
 
 // Fetch recipe data from a dummy API
-fetch(`https://dummyjson.com/recipes/4`)
+fetch(`https://dummyjson.com/recipes/${identity}`)
     .then(response => response.json()) // Convert the API response into JSON format
     .then(product => {
 
