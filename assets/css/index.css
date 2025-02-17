@@ -82,7 +82,6 @@ input[type="text"] {
 
 .carousel-track {
   display: flex;
-  gap: 15px; /* Afstand mellem billeder */
   transition: transform 0.5s ease-in-out;
 }
 
@@ -104,6 +103,7 @@ button {
   transform: translateY(-50%);
   font-size: 18px;
   border-radius: 50%;
+  z-index: 1;
 }
 
 .prev {
