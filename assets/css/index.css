@@ -114,6 +114,31 @@ button {
   right: 0;
 }
 
+/***Tekst på billeder***/
+.position {
+  position: relative;
+}
+
+.position img {
+  display: block;
+  object-fit: cover;
+}
+
+.tekst {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+/* .position :hover {
+  filter: grayscale(50%);
+} */
+
 @media (min-width: 600px) {
   .hero {
     max-width: 1500px;
