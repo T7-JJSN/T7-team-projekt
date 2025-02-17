@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-img {
+.recipe-img {
     width: 100%;
     display: block;
     max-width: 70vw;
@@ -152,7 +152,7 @@ input[type="checkbox"] {
 }
 
 @media screen and (max-width: 800px) {
-    img {
+    .recipe-img {
         max-width: 90vw;
         aspect-ratio: auto;
     }
