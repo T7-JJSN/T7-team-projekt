@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  color: #0c4140;
+}
+
+h2 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.hero {
+  max-width: 1500px;
+  margin: auto;
+  height: 55svh; /*højde på billede*/
+  background-image: url(/assets/Webp/madheroindex.webp);
+  background-size: cover;
+  background-position: 45% 45%; /*placering af billede*/
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_tekst {
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url("searchicon.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  height: 45px;
+}
+
+.search {
+  background-color: #0c4140;
+  text-align: center; /* Centrerer tekstindhold som h2 */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrerer form-elementet */
+  padding: 20px;
+}
+
+/****Billede karrosel***/
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 91%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 15px; /* Afstand mellem billeder */
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+  width: 120px; /* Justér størrelse */
+  height: 120px;
+  border-radius: 50%; /* Gør billederne runde */
+  object-fit: cover;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+@media (min-width: 600px) {
+  .hero {
+    max-width: 1500px;
+    margin: auto;
+    height: 85svh; /*højde på billede*/
+    background-image: url(/assets/Webp/madheroindex.webp);
+    background-size: cover;
+    background-position: 45% 45%; /*placering af billede*/
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero_tekst {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: 4rem;
+  }
+}
