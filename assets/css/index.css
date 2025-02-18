@@ -39,6 +39,7 @@ h2 {
   margin-left: 1.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  font-family: "Figtree", serif;
 }
 
 input[type="text"] {
@@ -64,6 +65,23 @@ input[type="text"] {
   align-items: center;
   /* Centrerer form-elementet */
   padding: 20px;
+}
+.form_search {
+  display: inline-block;
+  position: relative;
+}
+.search_form {
+  position: relative;
+  padding-left: 30px;
+}
+#search_ikon {
+  position: absolute;
+
+  z-index: 1;
+  top: 10%;
+  left: 10px;
+  transform: translateY(-50%); /* Juster for at centrere vertikalt */
+  font-size: 20px;
 }
 
 /****Billede karrosel***/
@@ -139,6 +157,7 @@ button {
   text-align: center;
   font-weight: bold;
   color: white;
+  font-family: "Figtree", serif;
 }
 
 #recipeform {
@@ -188,7 +207,7 @@ button {
   font-weight: bold;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
   .hero {
     max-width: 1500px;
     margin: auto;
@@ -207,9 +226,10 @@ button {
 
   .hero_tekst {
     position: absolute;
-    top: 40%;
+    top: 20%;
     left: 50%;
     margin-right: 4rem;
+    margin-bottom: 4rem;
   }
 
   #recipeform {
