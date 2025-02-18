@@ -1,3 +1,6 @@
+* {
+  margin: 0%;
+}
 img {
   width: 100%;
   height: auto;
@@ -11,12 +14,15 @@ img {
 .break_over_billede {
   position: relative;
   display: inline-block;
+  height: 55svh; /*højde på billede*/
+  background-position: 45% 45%; /*placering af billede*/
+  object-fit: cover;
 }
 
 .break_overskrift {
   position: absolute;
 
-  top: 80%;
+  top: 95%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgb(0, 0, 0);
@@ -29,7 +35,8 @@ img {
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   justify-items: center;
-  margin-top: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .kategori {
@@ -51,14 +58,15 @@ img {
 .kategori_tekst {
   position: absolute;
   font-weight: 700;
-  top: 40%;
-  left: 50%;
+  top: 50%;
+  left: 40%;
   transform: translate(-50%, -50%);
   color: rgb(255, 255, 255);
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 0.5rem;
-  border-radius: 10px;
+  border-radius: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
 
 .kategori:hover {
@@ -72,6 +80,7 @@ img {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 3rem;
     justify-items: center;
+    margin-top: 4rem;
   }
 
   .break_overskrift {

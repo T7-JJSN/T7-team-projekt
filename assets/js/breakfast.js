@@ -17,7 +17,7 @@ fetch(`https://dummyjson.com/recipes/meal-type/${typeofmeal}`)
 
     // Set the initial header content
     breakover.innerHTML = `
-             <img class="break_over_billede" src="assets/img/mad_break.webp" alt="">
+             <img class="break_over_billede" src="assets/webp/hero_lande.webp" alt="">
             <h1 class="break_overskrift">${typeofmeal}</h1>
         `;
 
