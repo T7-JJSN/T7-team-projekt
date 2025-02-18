@@ -37,6 +37,7 @@ h2 {
   margin-left: 1.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  font-family: "Figtree", serif;
 }
 
 input[type="text"] {
@@ -133,9 +134,10 @@ button {
   text-align: center;
   font-weight: bold;
   color: white;
+  font-family: "Figtree", serif;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
   .hero {
     max-width: 1500px;
     margin: auto;
@@ -152,8 +154,9 @@ button {
 
   .hero_tekst {
     position: absolute;
-    top: 40%;
+    top: 20%;
     left: 50%;
     margin-right: 4rem;
+    margin-bottom: 4rem;
   }
 }

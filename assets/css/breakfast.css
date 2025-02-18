@@ -8,7 +8,6 @@ img {
 
 .break_over {
   position: relative;
-  margin-top: 2rem;
 }
 
 .break_over_billede {
@@ -21,13 +20,13 @@ img {
 
 .break_overskrift {
   position: absolute;
-
+  font-family: "ivypresto-display", serif;
   top: 95%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgb(0, 0, 0);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-size: 3rem;
+
+  font-size: 4rem;
 }
 
 .break_skema {
@@ -64,6 +63,7 @@ img {
   border-radius: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   text-align: center;
+  font-family: "Figtree", serif;
 }
 
 .kategori:hover {
