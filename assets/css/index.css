@@ -21,10 +21,12 @@ h2 {
 .hero {
   max-width: 1500px;
   margin: auto;
-  height: 55svh; /*højde på billede*/
+  height: 55svh;
+  /*højde på billede*/
   background-image: url(/assets/Webp/madheroindex.webp);
   background-size: cover;
-  background-position: 45% 45%; /*placering af billede*/
+  background-position: 45% 45%;
+  /*placering af billede*/
 
   position: relative;
   display: flex;
@@ -56,10 +58,12 @@ input[type="text"] {
 
 .search {
   background-color: #0c4140;
-  text-align: center; /* Centrerer tekstindhold som h2 */
+  text-align: center;
+  /* Centrerer tekstindhold som h2 */
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centrerer form-elementet */
+  align-items: center;
+  /* Centrerer form-elementet */
   padding: 20px;
 }
 .form_search {
@@ -104,9 +108,11 @@ input[type="text"] {
 }
 
 .carousel-image {
-  width: 120px; /* Justér størrelse */
+  width: 120px;
+  /* Justér størrelse */
   height: 120px;
-  border-radius: 50%; /* Gør billederne runde */
+  border-radius: 50%;
+  /* Gør billederne runde */
   object-fit: cover;
 }
 
@@ -154,14 +160,63 @@ button {
   font-family: "Figtree", serif;
 }
 
+#recipeform {
+  margin-inline: 1vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+
+#nofd,
+#fname,
+#ingredients,
+#Instructions,
+#submit {
+  border: solid 3px #0c4140;
+  background-color: #E2ECDD;
+}
+
+#nofd {
+  grid-column: span 2;
+}
+
+#ingredients,
+#Instructions {
+  grid-row: span 10;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+#email {
+  height: 3rem;
+  border-radius: 50px;
+  padding: 1rem;
+  border: solid 3px #0c4140;
+  background-color: #E2ECDD;
+  font-size: 1rem;
+}
+
+#submit {
+  grid-column: span 2;
+  height: 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  color: #0c4140;
+  font-weight: bold;
+}
+
 @media (min-width: 900px) {
   .hero {
     max-width: 1500px;
     margin: auto;
-    height: 85svh; /*højde på billede*/
+    height: 85svh;
+    /*højde på billede*/
     background-image: url(/assets/Webp/madheroindex.webp);
     background-size: cover;
-    background-position: 45% 45%; /*placering af billede*/
+    background-position: 45% 45%;
+    /*placering af billede*/
 
     position: relative;
     display: flex;
@@ -175,5 +230,9 @@ button {
     left: 50%;
     margin-right: 4rem;
     margin-bottom: 4rem;
+  }
+
+  #recipeform {
+    margin-inline: 10vw;
   }
 }
