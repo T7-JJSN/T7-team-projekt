@@ -29,6 +29,7 @@ a {
   font-size: 1.2rem;
   font-weight: bold;
   padding-top: 1rem;
+  font-family: "Figtree", serif;
 }
 
 .opskrift {
@@ -64,7 +65,8 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 8rem;
-  color: white;
+  color: rgb(7, 6, 6);
+  font-family: "ivypresto-display", serif;
 }
 
 .centeret_opskrift {

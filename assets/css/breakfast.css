@@ -21,12 +21,12 @@ img {
 .break_overskrift {
   position: absolute;
   font-family: "ivypresto-display", serif;
-  top: 95%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgb(0, 0, 0);
 
-  font-size: 4rem;
+  font-size: 6.5rem;
 }
 
 .break_skema {

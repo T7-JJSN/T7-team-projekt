@@ -1,7 +1,7 @@
 // Retrieve query parameters from the URL
 const queryString = document.location.search;
 const URLparams = new URLSearchParams(queryString);
-const country = URLparams.get('cuisine');
+const country = URLparams.get("cuisine");
 console.log(country);
 
 // Select the container where the recipes will be displayed
@@ -10,19 +10,21 @@ const recipelist = document.querySelector(".opskrift_liste_container");
 
 // Fetch recipe data from the API
 fetch(`https://dummyjson.com/recipes/tag/${country}`)
-    .then(response => response.json())
-    .then(data => {
-        let titleHTML = document.querySelector("title");
-        titleHTML.innerHTML = country;
+  .then((response) => response.json())
+  .then((data) => {
+    let titleHTML = document.querySelector("title");
+    titleHTML.innerHTML = country;
 
-        // Set the initial header content
-        produktgrid.innerHTML = `
-            <img class="hero_billede" src="img_sophia/forsidebillede3.jpg" alt="billede 1">
+    // Set the initial header content
+    produktgrid.innerHTML = `
+            <img class="hero_billede" src="assets/webp/opskrifteside_hero.webp" alt="billede 1">
             <h1 class="h1_opskriftside">${country}</h1>
         `;
 
-        // Generate the recipe HTML using .map()
-        const recipesHTML = data.recipes.map(recipe => `
+    // Generate the recipe HTML using .map()
+    const recipesHTML = data.recipes
+      .map(
+        (recipe) => `
             <div class="opskrift">
                 <div class="centeret_opskrift">
                     <a href="enkeltopskriftside.html?id=${recipe.id}">
@@ -32,9 +34,11 @@ fetch(`https://dummyjson.com/recipes/tag/${country}`)
                 <p class="p_tekst1">${recipe.name}</p>
                 <div class="time_boks">${recipe.cookTimeMinutes + recipe.prepTimeMinutes} min</div>
             </div>
-        `).join('');
+        `
+      )
+      .join("");
 
-        // Append the recipes to the container
-        recipelist.innerHTML = recipesHTML;
-    })
-    .catch(error => console.error('Error fetching recipes:', error));
+    // Append the recipes to the container
+    recipelist.innerHTML = recipesHTML;
+  })
+  .catch((error) => console.error("Error fetching recipes:", error));
