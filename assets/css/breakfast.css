@@ -14,8 +14,8 @@ img {
 .break_over_billede {
   position: relative;
   display: inline-block;
-  height: 55svh; /*højde på billede*/
-  background-position: 45% 45%; /*placering af billede*/
+  height: 55svh;
+  background-position: 45% 45%;
   object-fit: cover;
 }
 
@@ -47,9 +47,6 @@ img {
 .kategori_billede {
   display: block;
   max-width: 200px;
-  /* kan fjernes med andet billede  */
-  width: 200px;
-  height: 200px;
 
   border-radius: 50%;
   object-fit: cover;
