@@ -135,10 +135,6 @@ button {
   color: white;
 }
 
-/* .position :hover {
-  filter: grayscale(50%);
-} */
-
 @media (min-width: 600px) {
   .hero {
     max-width: 1500px;
