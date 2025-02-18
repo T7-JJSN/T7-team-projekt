@@ -38,6 +38,7 @@ a {
   position: relative;
   grid-row: span 4;
   background-color: #f2ebe3;
+  transition: 0.5s;
 }
 .opskrift:hover {
   transform: scale(1.05);
