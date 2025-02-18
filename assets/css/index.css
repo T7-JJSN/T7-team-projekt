@@ -62,6 +62,23 @@ input[type="text"] {
   align-items: center; /* Centrerer form-elementet */
   padding: 20px;
 }
+.form_search {
+  display: inline-block;
+  position: relative;
+}
+.search_form {
+  position: relative;
+  padding-left: 30px;
+}
+#search_ikon {
+  position: absolute;
+
+  z-index: 1;
+  top: 10%;
+  left: 10px;
+  transform: translateY(-50%); /* Juster for at centrere vertikalt */
+  font-size: 20px;
+}
 
 /****Billede karrosel***/
 .carousel-container {
