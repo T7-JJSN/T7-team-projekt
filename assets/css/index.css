@@ -23,7 +23,7 @@ h2 {
   margin: auto;
   height: 55svh;
   /*højde på billede*/
-  background-image: url(/assets/Webp/madheroindex.webp);
+  background-image: url(../Webp/madheroindex.webp);
   background-size: cover;
   background-position: 45% 45%;
   /*placering af billede*/
@@ -217,7 +217,7 @@ button {
     margin: auto;
     height: 85svh;
     /*højde på billede*/
-    background-image: url(/assets/Webp/madheroindex.webp);
+    background-image: url(../Webp/madheroindex.webp);
     background-size: cover;
     background-position: 45% 45%;
     /*placering af billede*/
