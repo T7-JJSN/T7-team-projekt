@@ -16,8 +16,7 @@ fetch(`https://dummyjson.com/recipes/tag/${country}`)
     titleHTML.innerHTML = country;
 
     // Set the initial header content
-    produktgrid.innerHTML = `
-            <img class="hero_billede" src="assets/webp/opskrifteside_hero.webp" alt="billede 1">
+    produktgrid.innerHTML += `
             <h1 class="h1_opskriftside">${country}</h1>
         `;
 

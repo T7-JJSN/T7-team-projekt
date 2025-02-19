@@ -23,7 +23,7 @@ h2 {
   margin: auto;
   height: 55svh;
   /*højde på billede*/
-  background-image: url(/assets/Webp/madheroindex.webp);
+  background-image: url(assets/Webp/madheroindex.webp);
   background-size: cover;
   background-position: 45% 45%;
   /*placering af billede*/
@@ -66,21 +66,25 @@ input[type="text"] {
   /* Centrerer form-elementet */
   padding: 20px;
 }
+
 .form_search {
   display: inline-block;
   position: relative;
 }
+
 .search_form {
   position: relative;
   padding-left: 30px;
 }
+
 #search_ikon {
   position: absolute;
 
   z-index: 1;
   top: 10%;
   left: 10px;
-  transform: translateY(-50%); /* Juster for at centrere vertikalt */
+  transform: translateY(-50%);
+  /* Juster for at centrere vertikalt */
   font-size: 20px;
 }
 
@@ -213,7 +217,7 @@ button {
     margin: auto;
     height: 85svh;
     /*højde på billede*/
-    background-image: url(/assets/Webp/madheroindex.webp);
+    background-image: url(assets/Webp/madheroindex.webp);
     background-size: cover;
     background-position: 45% 45%;
     /*placering af billede*/
